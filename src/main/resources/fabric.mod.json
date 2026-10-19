@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "fpsboost",
+  "version": "${version}",
+  "name": "FPS Boost (client)",
+  "description": "Client-side CPU-load reduction (particle cap, distance culling of entities and block entities, optional ambient-particle removal) plus frame-time / GC diagnostics. Designed to sit next to Sodium 0.2.0; touches none of Sodium's rendering paths.",
+  "authors": ["You"],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.fpsboost.FpsBoostMod"]
+  },
+  "mixins": ["fpsboost.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.11.0",
+    "minecraft": "1.16.5",
+    "java": ">=8",
+    "fabric-key-binding-api-v1": "*",
+    "fabric-lifecycle-events-v1": "*"
+  },
+  "suggests": {
+    "sodium": "0.2.0"
+  }
+}

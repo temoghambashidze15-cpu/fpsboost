@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.fpsboost.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "BlockEntityRenderDispatcherMixin",
+    "ClientWorldMixin",
+    "EntityRenderDispatcherMixin",
+    "MinecraftClientMixin",
+    "ParticleManagerAccessor",
+    "ParticleManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
